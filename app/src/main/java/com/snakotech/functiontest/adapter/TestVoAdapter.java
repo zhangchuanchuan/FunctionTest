@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,8 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.snakotech.functiontest.R;
-
-import java.util.List;
+import com.snakotech.functiontest.test.TestParamVo;
 
 /**
  * 测试参数 adapter
@@ -79,7 +78,7 @@ public class TestVoAdapter extends RecyclerView.Adapter<TestVoAdapter.ViewHolder
         }
     }
 
-    interface TestVoCheckedListener {
+    public interface TestVoCheckedListener {
         void onTestChecked();
     }
 }

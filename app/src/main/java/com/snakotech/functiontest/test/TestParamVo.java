@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.test;
 
 import com.google.gson.JsonObject;
 

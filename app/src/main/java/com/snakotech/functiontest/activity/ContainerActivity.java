@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.container;
+package com.snakotech.functiontest.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.snakotech.functiontest.R;
+import com.snakotech.functiontest.api.LocalFunctionAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;

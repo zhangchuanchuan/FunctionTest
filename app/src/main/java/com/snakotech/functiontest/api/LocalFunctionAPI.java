@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.container;
+package com.snakotech.functiontest.api;
 
 import android.app.AlertDialog;
 import android.content.Context;

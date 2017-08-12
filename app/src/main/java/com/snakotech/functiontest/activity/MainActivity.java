@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.snakotech.functiontest.R;
-import com.snakotech.functiontest.container.ContainerActivity;
-import com.snakotech.functiontest.container.LocalFunctionAPI;
+import com.snakotech.functiontest.api.LocalFunctionAPI;
+import com.snakotech.functiontest.adapter.ItemAdapter;
 import com.snakotech.functiontest.test.APITest;
 import com.snakotech.functiontest.test.APITestVo;
 

@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.test;
 
 /**
  * 参数vo

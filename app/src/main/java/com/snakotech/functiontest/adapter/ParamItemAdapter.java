@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.snakotech.functiontest.R;
+import com.snakotech.functiontest.test.ParamVo;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.snakotech.functiontest.run;
+package com.snakotech.functiontest.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.snakotech.functiontest.R;
+import com.snakotech.functiontest.activity.TestAPIActivity;
 import com.snakotech.functiontest.test.APITest;
 import com.snakotech.functiontest.test.APITestVo;
 
