@@ -36,26 +36,16 @@ public class ParamItemAdapter extends RecyclerView.Adapter<ParamItemAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         final ParamVo paramVo = mList.get(position);
         holder.name.setText(paramVo.getName());
         if (paramVo.getValue() != null) {
             holder.value.setText(paramVo.getValue());
         }
-        holder.value.addTextChangedListener(new TextWatcher() {
+        holder.modify.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                paramVo.setValue(s.toString());
+            public void onClick(View v) {
+                paramVo.setValue(holder.value.getText().toString());
             }
         });
     }
@@ -68,10 +58,12 @@ public class ParamItemAdapter extends RecyclerView.Adapter<ParamItemAdapter.View
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView name;
         EditText value;
+        View modify;
         public ViewHolder(View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.param_name);
             value = (EditText) itemView.findViewById(R.id.param_value);
+            modify = itemView.findViewById(R.id.modify);
         }
     }
 }

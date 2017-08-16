@@ -15,5 +15,11 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:hint="这里输入参数"
-        android:layout_weight="2"/>
+        android:layout_weight="3"/>
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="修改"/>
 </LinearLayout>

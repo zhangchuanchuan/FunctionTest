@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.snakotech.functiontest.R;
 import com.snakotech.functiontest.api.LocalFunctionAPI;
@@ -144,7 +145,8 @@ public class TestAPIActivity extends Activity {
                 JSONObject jsonObject = new JSONObject();
                 for (String key : keys) {
                     try {
-                        jsonObject.put(key, object.get(key).getAsString());
+                        JsonElement jsonElement = object.get(key);
+                        jsonObject.put(key, jsonElement.isJsonObject() ? jsonElement.getAsJsonObject().toString() : jsonElement.getAsString());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
